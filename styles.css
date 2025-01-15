@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&display=swap');
+ 
+:root {
+    --primary-color: #004AAB;
+    --secondary-color: #7ED958;
+    --tertiary-color: #5CE1E6;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f6f6f6;
+}
+
+/* NAVBAR */
+.navbar {
+    font-family: "Manrope", sans-serif;
+    height: 90px;
+    overflow: visible;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 50px;
+    font-size: 2.3rem;
+}
+
+.navbar .selected {
+    font-weight: bold;
+    color: var(--secondary-color);
+   
+}
+
+.navbar a:hover {
+    border-bottom: 2px var(--secondary-color) solid;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin: 100px 0px;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hero-body {
+    max-width: 625px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+.hero-body p {
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.hero-end {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    letter-spacing: -2%;
+}
+.hero a {
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: -2.5%rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar img {
+    width: 150px;
+    height: auto;
+}
+
+/* smaller desktops */
+@media (max-width: 1250px) {
+    .navbar a {
+        padding: 10px 8px;
+        font-size: 1.5rem;
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        display: none;
+    }
+}
