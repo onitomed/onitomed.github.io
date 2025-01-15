@@ -132,12 +132,17 @@ a {
 @media (max-width: 550px) {
     .navbar a {
         padding: 10px 1px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin: 0 10px;
     }
     
     .navbar .flex {
         flex-direction: column;
+    }
+    .hero a {
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: -2.5%rem;
     }
     
     
