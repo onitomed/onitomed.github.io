@@ -17,7 +17,7 @@
 
 .btn {
     display: inline-block;
-    padding: 0px 35px;
+    padding: 0px 30px;
     cursor: pointer;
     background-color: var(--primary-color);
     color: #f6f6f6;
@@ -221,4 +221,12 @@
 }
 .p-5 {
     padding: 4rem;
+}
+@media (max-width: 768px) {
+    .btn {
+        
+        padding: 0px 15px;
+       
+    }
+    
 }

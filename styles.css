@@ -108,17 +108,37 @@ a {
     height: auto;
 }
 
-/* smaller desktops */
-@media (max-width: 1250px) {
+/* smaller desktops, tablets */
+@media (max-width: 1200px) {
     .navbar a {
         padding: 10px 8px;
         font-size: 1.5rem;
         margin: 0 15px;
     }
 }
-
+/* mobile */
 @media (max-width: 768px) {
-    body {
-        display: none;
+    .navbar .flex {
+        flex-direction: column;
     }
+    .hero a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -2.5%rem;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .navbar a {
+        padding: 10px 1px;
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+    
+    .navbar .flex {
+        flex-direction: column;
+    }
+    
+    
 }
