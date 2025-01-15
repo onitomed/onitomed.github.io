@@ -148,7 +148,7 @@ a {
     
     .navbar .flex {
         flex-direction:column;
-        overflow-y: hidden;
+        overflow: hidden;
     }
     .hero a {
         font-size: 1.2rem;
