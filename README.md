@@ -1,7 +1,7 @@
-# Simple landing page
+# ONITO landing page
 
-Simple landing page deployed on the Internet freely.
+ONITO is a medical technology company. ONITO makes PDFs of patient medical data including scans, test reports, and prescriptions. ONITO also provides software for doctors and hospitals to view reports and obtain analytics on patients reports.
 
-# Bots 4 U Consultancy
+# ONITO
 
-If you'd like a human coder to implement and maintain this project within your organization's codebase, we have yearly contracts. Contact us at manonthemoon13131@gmail.com.
+Contact us at onitomed@gmail.com.
