@@ -1,0 +1,17 @@
+<html lang='en'>
+                        <head>
+                            <meta charset='UTF-8'>
+                            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                            <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico'>
+                            <link rel='stylesheet' href='styles.css'>
+                            <title>STDinfo protocol description - ONITO Dex</title>
+                        </head>
+                        <body>
+                        <br>
+                        <h1>STDINFO PROTOCOL DESCRIPTION</h1>
+                        <br>
+                        <p>Secure multiparty computation to infer transmission risk from 2 sexually transmitted diseases (STDs) test reports.</p><p>The mathematical problem statement is: compute a function F(a,b) that takes input a from Alice and b from Bob, without revealing b to Alice nor a to Bob</p><p>Bob encrypts b and send enc(b) to Alice. Alice computes F(a,enc(b)) sends it to Bob. Bob can compute F(a,b) without knowing b, because F is a special function that allows that using garbled circuits, finite field arithmetic, or Shamir secret sharing.</p><p>Sample problem set up</p><p>Alice and Bob have 2 private strings. A = 010001 and B = 010000</p><p>Compute bitwise XOR and modulo-2 sum. 0+0+0+0+0+1 = 1. If the result of this computation is 1, both partners cannot have safe sex. If the result is 0, both partners can have safe sex without transmission risk.</p><p>Bit strings represent medical reports. Bitwise XOR and modulo-2 sum returns 1 if A has a sexually transmitted disease that B doesn't, and True (0) if both can have safe sex because they either have no diseases or share the same diseases.</p><p>STDinfo protocol underlying working principle</p><p>There are 3 parties: A (Alice), B (Bob), and C (Charlie). A and B have private data 'a' and 'b'.</p><p>A generates shares s1,s2,s3 from 'a' with the property that any 2 can be used in a public function g() to get a. This property is called Shamir secret sharing. B similarly generates shares t1,t2,t3 from 'b'.</p><p>A sends s2,s3 to B and C respectively. B sends t1,t3 to A and C respectively.</p><p>A calculates XOR(s1,t1) and sends it to B. B calculates XOR(s2,t2) and sends it to A.</p><p>A and B calculate XOR(a,b) using XOR(s1,t1) and XOR(s2,t2) because XOR(s1,t1) and (s2 XOR t2) are shares of XOR(a,b). (from g(s1,s2)=s). This is called 2-reconstruction property.</p><p>Thus, XOR (a,b) is calculated without sharing a with Bob nor b with Alice. Similarly, modulo-2 is calculated.</p><p>Lasso is a regression algorithm that ignores features having low correlation with a target. This was used to find important features from a combination of 2 private datasets without the parties revealing datasets to each other.</p><p>STDinfo protocol has applications in semiconductor fab optimization, healthcare data analytics, and privacy for large language models. </p><p><a href='https://mpyc.readthedocs.io/en/latest/'>MPyC</a>: Library in Python for secure multiparty computation</p><p><a href='https://github.com/alinoorul/stdinfo'>STDinfo</a>: Github repository for ONITO's Python implementation of secure multiparty computation to find disease transmission risk from medical test reports</p>
+                        <br><br><br><br><br><br><br>
+                        <h3><a href='index.html'>ONITO DEX</a></h3>
+                    </body>
+                    </html>
