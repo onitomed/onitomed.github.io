@@ -64,7 +64,7 @@ body {
 /* HERO */
 .hero {
     text-align: center;
-    margin: 100px 0px;
+    margin: 100px 0px 50px 0px;
 }
 .flex {
     display: flex;
@@ -114,6 +114,57 @@ a {
     width: 150px;
     height: auto;
 }
+footer {
+    padding: 00px 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.model-info {
+    
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-github {
+    background: #1B1F24;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-instagram {
+    background: #8a3ab9;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #0072b1;
+    color: white;
+  }
+  .fa-envelope {
+    background: var(--secondary-color);
+    color: white;
+  }
+
 
 /* smaller desktops, tablets */
 @media (max-width: 1100px) {
