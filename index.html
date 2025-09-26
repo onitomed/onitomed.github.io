@@ -11,16 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home - ONITO</title>
 </head>
-<script>
-    function myFunction() {
-  var x = document.getElementById("myNavbar");
-  if (x.className === "navbar my-3") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar my-3";
-  }
-}
-</script>
 <body>
     <!-- NAVBAR -->
     <div class="navbar my-3" id="myNavbar">
@@ -32,9 +22,8 @@
                     <li><a href="hospitals.html">hospitals</a></li>
                     <li><a href="doctors.html">doctors</a></li>
                     <li><a href="research.html" class="re">research</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i></a>
-
+                    
+                    
                     </li>
                 </ul>
             </nav>
@@ -45,9 +34,11 @@
     <section class="hero p-3">
         <div class="container hero">
             <div class="hero-text container flex">
-                <h1>medical reports on your phone</h1>
+                <h1>all medical reports on your phone</h1>
             </div>
+            
             <a class="btn m-5" href="https://onitomed.onrender.com/#/register">SIGN UP</a>
+            
             <div class="hero-body flex">
                 <p>25 pages free<br>₹ 1000 for 10 years</p>
             </div>

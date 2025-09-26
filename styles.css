@@ -26,9 +26,10 @@ body {
 /* NAVBAR */
 .navbar {
     font-family: "Manrope", sans-serif;
-    height: 90px;
+    
     overflow: hidden;
     position: relative;
+    height: 90px;
 }
 
 .navbar .flex {
@@ -64,14 +65,19 @@ body {
 /* HERO */
 .hero {
     text-align: center;
-    margin: 100px 0px 50px 0px;
+    margin: 25px 0px 50px 0px;
 }
+
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.hflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .hero h1 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -189,19 +195,18 @@ footer {
     
     
 }
-
-@media (max-width: 500px) {
-    
-    .navbar a {
-        padding: 10px 1px;
-        font-size: 1.4rem;
-        margin: 0 10px;
-        
-    
+@media (max-width: 590px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
-    
-    .navbar .flex {
-        flex-direction:column;
+    .navbar a:hover {
+        border-bottom: none
+    }
+
+    .navbar {
+        height: 210px;
         overflow: hidden;
     }
     .hero a {
@@ -209,30 +214,5 @@ footer {
         font-weight: 600;
         letter-spacing: -2.5%rem;
     }
-
-    .navbar li:not(:last-child) {display: none; }
-    .navbar li:first-child {display: block; }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-  .re {
-    display: none;
-  }
-}
-@media screen and (max-width: 500px) {
-  .navbar .responsive {position: relative;}
-  .navbar .responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive li {
-    float: none;
-    display: block;
-    text-align: left;
-    
-  }
-    
     
 }
